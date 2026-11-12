@@ -1,0 +1,12 @@
+using System.Collections.Generic;
+using UnityEngine;
+public class Card {
+
+    public string Title => data.name;
+    public Sprite Image => data.Image;
+    public List<Effect> Effects => data.Effects;
+    private readonly CardData data;
+    public Card(CardData cardData){
+        data = cardData;
+    }
+}
